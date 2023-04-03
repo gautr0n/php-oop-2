@@ -17,6 +17,8 @@
             } else if ($animal == 'cane'){
                 $this -> animal = $animal;
                 $this -> image = './images/dog.png';
+            } else {
+                throw new Exception("Nessun prodotto presente nello store");
             }
         }
     }
