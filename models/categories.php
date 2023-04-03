@@ -1,8 +1,14 @@
 <?php
 
-    class categories{
-        public $animal;
+    trait Image {
         public $image;
+    }
+
+    class categories{
+
+        use image;
+
+        public $animal;
 
         function __construct($animal){
             if ($animal == 'gatto') {

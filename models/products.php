@@ -3,7 +3,9 @@
     require_once __DIR__ . '/categories.php';
 
     class Products{
-        public $image;
+        
+        use image;
+
         public $name;
         public $price;
         public $categories;
